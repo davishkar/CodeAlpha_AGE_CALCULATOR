@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Age Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-effect">
+            <h1>Age Calculator</h1>
+            <p>Enter the date of birth and current date to calculate your age in years, months, and days.</p>
+            <div class="form-group">
+                <label for="birthDay">Date of Birth</label>
+                <div class="inputs">
+                    <input type="number" id="birthDay" placeholder="Day" min="1" max="31" required>
+                    <input type="number" id="birthMonth" placeholder="Month" min="1" max="12" required>
+                    <input type="number" id="birthYear" placeholder="Year" min="1900" max="2024" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="currentDay">Find Age on</label>
+                <div class="inputs">
+                    <input type="number" id="currentDay" placeholder="Day" min="1" max="31" required>
+                    <input type="number" id="currentMonth" placeholder="Month" min="1" max="12" required>
+                    <input type="number" id="currentYear" placeholder="Year" min="1900" max="2100" required>
+                </div>
+            </div>
+            <button onclick="calculateAge()">Calculate Your Age</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
